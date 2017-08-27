@@ -10,7 +10,12 @@ package br.ufpb.CtrlE;
  * @author junior
  */
 class ParticipanteNaoExisteException extends Exception {
-    public ParticipanteNaoExisteException(String msg){
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public ParticipanteNaoExisteException(String msg){
         super(msg);
     }
 }

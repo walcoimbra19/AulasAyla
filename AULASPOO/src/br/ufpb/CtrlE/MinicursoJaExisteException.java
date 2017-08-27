@@ -10,7 +10,12 @@ package br.ufpb.CtrlE;
  * @author junior
  */
 class MinicursoJaExisteException extends Exception {
-    public MinicursoJaExisteException (String str){
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public MinicursoJaExisteException (String str){
         super(str);
     }
     

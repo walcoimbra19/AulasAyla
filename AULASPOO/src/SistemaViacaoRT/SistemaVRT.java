@@ -9,8 +9,8 @@ public class SistemaVRT implements SistemaVendasDePassagens {
 	private List<Usuario> usuarios;
 
 	public SistemaVRT() {
-		List<Passagem> passagens = new ArrayList<>();
-		List<Usuario> usuarios = new ArrayList<>();
+		this.passagens = new ArrayList<>();
+		this.usuarios = new ArrayList<>();
 	}
 	
 	@Override
@@ -31,14 +31,14 @@ public class SistemaVRT implements SistemaVendasDePassagens {
 
 	@Override
 	public void cadastrarUsuario(String idUsuario, String nome, String tipo) throws UsuarioJaExisteException {
-		for(Usuario u: this.usuarios) {
-			if(u.getIdUsuario().equals(idUsuario)) {
+		for(Usuario usuario: this.usuarios) {
+			if(usuario.getIdUsuario().equals(idUsuario)) {
 				throw new UsuarioJaExisteException("já existe usuario com esse ID: "+idUsuario);
 			}
 			
 		}
-		Usuario u = new Usuario(idUsuario, nome, tipo);
-		usuarios.add(u);
+		Usuario g = new Usuario(idUsuario, nome, tipo);
+		this.usuarios.add(g);
 		
 	}
 
