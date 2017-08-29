@@ -6,7 +6,7 @@
 package br.ufpb.CtrlE;
 
 import java.io.IOException;
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -136,7 +136,7 @@ public class SistemaCtrlE {
                     List<String> participantesStringEncontrados = gravador.recuperaTextoDeArquivo(nomeDoArquivo);
                     int cont = 0;
                     int cont2 = 0;
-                    int totalIndex = 7;
+                    
                     int max = participantesStringEncontrados.size();
                     int max2 = max/7;
                     while(cont2 < max2){
